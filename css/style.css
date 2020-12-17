@@ -112,7 +112,6 @@ p {
     justify-content: space-around;
     /*border-color: #E6ECF8;*/
 
-
 }
 
 .titulo-linguagens{
@@ -140,10 +139,10 @@ p {
     flex-direction: column;
 }
 
-.titulo-backend{color: #EC6E5A; border-left: 4px solid #EC6E5A; font-size: bold; }
-.titulo-frontend { color: #5EC6F3; border-left: 4px solid #5EC6F3; font-size: bold;}
-.titulo-frameworks { color: #AD85BF; border-left: 4px solid #AD85BF; font-size: bold;}
-.titulo-bancodedados { color: #25D285; border-left: 4px solid #25D285; font-size: bold;}
+.titulo-backend{color: #25D285; border-left: 4px solid #25D285; font-size: bold; padding-left: 5px;}
+.titulo-frontend { color: #25D285; border-left: 4px solid #25D285; font-size: bold; padding-left: 5px;}
+.titulo-frameworks { color: #25D285; border-left: 4px solid #25D285; font-size: bold; padding-left: 5px;}
+.titulo-bancodedados { color: #25D285; border-left: 4px solid #25D285; font-size: bold; padding-left: 5px;}
 
 .texto-linguagens {
     font-size: 14px;
