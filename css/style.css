@@ -1,4 +1,13 @@
+h1,
+h2,
+h3,
+p {
+    font-family: "eurostile", sans-serif;
+    color: #141c3a;
+}
+
 /* ESTILO HEADER */
+
 
 .conteudo-header {
     display: flex;
@@ -8,13 +17,14 @@
     margin: 0 65px 0 65px;
 }
 
-.contato-header{
-    font-family: "eurostile", sans-serif;
+.contato-header {
     border-style: solid;
     border-width: 3px;
     border-radius: 25px;
     padding: 10px;
-    border-color: #00EE76 /*#00EE76 ou #00E5EE*/;
+    border-color: #00EE76
+        /*#00EE76 ou #00E5EE*/
+    ;
     color: #00EE76;
     font-weight: bold;
 }
@@ -23,32 +33,121 @@
 /* ESTILO MAIN */
 
 
-.conteudo-titulo{
+.conteudo-titulo {
     font-family: "eurostile", sans-serif;
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-top: 85px;
-    color: #141c3a;
     padding-bottom: 170px;
-    background: linear-gradient( rgb(255, 255, 255) 0%, rgb(255, 255, 255) 35%, #00EE76 100%);
+    background: linear-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 35%, #00EE76 100%);
 }
 
-.titulo-conteudo{
+.titulo-conteudo {
     font-size: 50px;
     font-weight: bold;
 }
 
-.texto-conteudo{
+.texto-conteudo {
     font-size: 20px;
     font-weight: 100;
 }
 
 
-.imagem-frontend{
+.imagem-frontend {
     width: 210px;
     align-self: center;
     margin-top: 45px;
-    
+}
+
+
+/* ESTILO BIOGRAFIA - QUEM SOU EU? */
+
+.bio {
+    background-image: linear-gradient(#00EE76, white);
+}
+
+.bio-principal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 160px;
+
+    width: 900px;
+    margin-left: 350px;
+
+}
+
+.titulo-bio {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.texto-bio {
+    width: 700px;
+    align-self: center;
+    line-height: 25px;
+
+}
+
+.icone-notebook {
+    width: 750px;
+    display: flex;
+    align-self: center;
+    margin-top: 40px;
+
+}
+
+
+/* ESTILO "LINGUAGENS" */
+
+
+.linguagens {}
+
+.navbar-linguagens {
+    display: flex;
+    height: 300px;
+    flex-direction: row;
+    justify-content: space-around;
+    /*border-color: #E6ECF8;*/
+
+
+}
+
+.titulo-linguagens{
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.container-backend {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-frontend {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-framework {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-bd {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-backend{color: #EC6E5A; border-left: 4px solid #EC6E5A; font-size: bold; }
+.titulo-frontend { color: #5EC6F3; border-left: 4px solid #5EC6F3; font-size: bold;}
+.titulo-frameworks { color: #AD85BF; border-left: 4px solid #AD85BF; font-size: bold;}
+.titulo-bancodedados { color: #25D285; border-left: 4px solid #25D285; font-size: bold;}
+
+.texto-linguagens {
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0;
 
 }
