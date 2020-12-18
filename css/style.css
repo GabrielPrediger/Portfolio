@@ -65,6 +65,8 @@ p {
 
 .bio {
     background-image: linear-gradient(#00EE76, white);
+    display: flex;
+    justify-content: center;
 }
 
 .bio-principal {
@@ -73,10 +75,7 @@ p {
     flex-direction: column;
     text-align: center;
     padding-bottom: 160px;
-
     width: 900px;
-    margin-left: 350px;
-
 }
 
 .titulo-bio {
