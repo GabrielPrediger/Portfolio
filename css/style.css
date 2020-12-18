@@ -48,11 +48,6 @@ p {
     font-weight: bold;
 }
 
-.texto-conteudo {
-    font-size: 20px;
-    font-weight: 100;
-}
-
 
 .imagem-frontend {
     width: 210px;
@@ -155,22 +150,22 @@ p {
 
 
 .projetos{
-    background-color: #00EE76;
+    background-image: linear-gradient(#00EE76 10%, rgb(255, 255, 255) 40%, rgb(255, 255, 255) 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 200px;
+    height: 500px;
 }
 
 .container-projetos {
     border-style: solid;
     border-color: #E6ECF8;
     background-color: white;
-    margin: 900px 85px 0 85px;
-    width: 1200px;
-    height: 750px;
-    position: absolute;
+    width: 80%;
+    height: 900px;
+
+    
 }
 
 .projetos-faculdade-titulos{
@@ -186,4 +181,12 @@ p {
 
 .imagem-projeto-faculdade{
     width: 250px;
+}
+
+.fim-projetos {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 35%, #00EE76 100%);
+
 }
