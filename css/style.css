@@ -109,7 +109,7 @@ p {
     height: 300px;
     flex-direction: row;
     justify-content: space-around;
-    /*border-color: #E6ECF8;*/
+    
 
 }
 
@@ -148,4 +148,42 @@ p {
     line-height: 30px;
     margin: 0;
 
+}
+
+
+/* ESTILO PROJETOS */
+
+
+.projetos{
+    background-color: #00EE76;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 200px;
+}
+
+.container-projetos {
+    border-style: solid;
+    border-color: #E6ECF8;
+    background-color: white;
+    margin: 900px 85px 0 85px;
+    width: 1200px;
+    height: 750px;
+    position: absolute;
+}
+
+.projetos-faculdade-titulos{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.projetos-faculdade-imagens{
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagem-projeto-faculdade{
+    width: 250px;
 }
