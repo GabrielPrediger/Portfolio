@@ -175,15 +175,11 @@ p {
     height: 405vh;
     display: flex;
     flex-direction: column;
-    position:relative;
-   
-
-    
+    position:relative; 
 }
 
 .projetos-faculdade-titulos{
     margin-left: 50px;
-
 }
 
 .projetos-faculdade-imagens{
@@ -201,9 +197,7 @@ p {
     
    
 }
-
-.titulo-projetos{
-    
+.titulo-projetos{   
     margin-bottom: 40px;
 }
 .titulo-faculdade{
@@ -226,7 +220,11 @@ p {
     filter: blur(0px);
 }
 
-.fim-projetos{
+
+/* ESTILO IMAGEM */
+
+
+.imagem-fim-projetos{
     background-image: linear-gradient(#00EE76, white);
     display: flex;
     align-self: center;
@@ -234,9 +232,58 @@ p {
     padding-top: 50px;
 }
 
-.testes{
+.imagem-fim{
     display: flex;
     align-self: center;
+    width: 70vw;
     
+}
+
+
+/* ESTILO CURSOS */
+
+
+.cursos {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background: linear-gradient(rgb(255, 255, 255) 0%, #00EE76 100%);
+    
+
+}
+
+.meu-curso-titulo{
+    margin-bottom: 40px;
+}
+
+.container-cursos{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: #E6ECF8;
+    background-color: #E6ECF8;
+    width: 80%;
+    padding: 20px;
+    box-shadow: 12px 12px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.section-cursos{
+    display: flex;
+    flex-direction: column; 
+    
+}
+
+.nome-curso{
+    display: flex;
+    align-items:center;
+    border-style: solid;
+    border-color: #E6ECF8;
+    background-color: #E6ECF8;
+
+}
+
+.imagem-curso{
+    width: 5vw;
+    margin-right: 15px;
 }
 
