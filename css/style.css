@@ -1,3 +1,5 @@
+/* DEFINIÇÃO FONTE */
+
 h1,
 h2,
 h3,
@@ -153,23 +155,24 @@ p {
 
 
 .projetos{
-    box-shadow: 0px 1px 20px 20px #00EE76;
-    background-image: linear-gradient(#00EE76 10%, rgb(255, 255, 255) 40%, rgb(255, 255, 255) 100%);
+    background: linear-gradient(rgb(255, 255, 255) 0%, #00EE76 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 90vh;
+    height: 160vh;
 }
 
 .container-projetos {
     box-shadow: 12px 12px 10px 5px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
+    border-style: solid;
+    border-color: #E6ECF8;
     opacity: 1;
     background-color: white;
     width: 80%;
-    height: 105vh;
+    height: 405vh;
     display: flex;
     flex-direction: column;
     position:relative;
@@ -179,9 +182,8 @@ p {
 }
 
 .projetos-faculdade-titulos{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+    margin-left: 50px;
+
 }
 
 .projetos-faculdade-imagens{
@@ -199,8 +201,16 @@ p {
     
    
 }
+
+.titulo-projetos{
+    
+    margin-bottom: 40px;
+}
 .titulo-faculdade{
-    margin: 5px auto;
+    color: #000000; 
+    border-left: 4px solid #25D285;
+    padding-left: 5px;
+    margin: 45px auto;
     padding-top: 2px;
 }
 
@@ -209,15 +219,24 @@ p {
     height: 20vh;
     margin: 0 auto;
     filter: blur(2px);
+    transition: 2s;
     
-    
-
+}
+.imagem-projeto-faculdade:hover{
+    filter: blur(0px);
 }
 
-.fim-projetos {
+.fim-projetos{
+    background-image: linear-gradient(#00EE76, white);
     display: flex;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 35%, #00EE76 100%);
-
+    align-self: center;
+    justify-content: center;
+    padding-top: 50px;
 }
+
+.testes{
+    display: flex;
+    align-self: center;
+    
+}
+
