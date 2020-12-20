@@ -5,10 +5,11 @@
     <title>Gabriel Prediger | Portifólio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
@@ -64,6 +65,7 @@
                     <h3 class="titulo-bancodedados">Banco de Dados</h3>
                     <p class="texto-linguagens">MySQL</p>
                 </section>
+                
             </nav>
         </div>
         <div class="projetos">
@@ -75,9 +77,9 @@
                     <h1 class="titulo-faculdade">Faculdade</h1>
                 </section>
                 <section class="projetos-faculdade-imagens">
-                    <div><img class="imagem-projeto-faculdade" src="./img/ProjetoEng.png"></div>
-                    <div><img class="imagem-projeto-faculdade" src="./img/ProjetoEng.png"></div>
-                    <div><img class="imagem-projeto-faculdade" src="./img/ProjetoEng.png"></div>
+                    <div><img id="MaPvbLdlf4I?t=65" class="imagem-projeto-faculdade" src="./img/ProjetoEng.png"></div>
+                    <div><img id="2M4PJJoHNQ4"      class="imagem-projeto-faculdade" src="./img/ProjetoEng.png"></div>
+                    <div><img id="ff3r10rCKFs"      class="imagem-projeto-faculdade" src="./img/ProjetoEng.png"></div>
                 </section>
                 <section class="projetos-titulos">
                     <h1 class="titulo-pessoais">Pessoais</h1>
@@ -139,9 +141,22 @@
             </div>
         </div>
         <div class="footer-fim">
-            <p style="text-align: center; color: rgb(39, 39, 39); font-size: 15px;">Copyright &copy; 2020 Gabriel Prediger</p>
+            <p class="texto-footer">Criado por mim &copy; 2020</p>
         </div>
     </main>
+    <div id="modalOverlay" class="modalOverlay">
+        <div id="whiteModal"  class="modal">
+            <div class="modalContent">
+                <iframe src=""  frameborder="0"></iframe>
+            </div>
+            <a class="closeModal">
+                <span onclick="closeModal()" class="material-icons">
+                    close
+                </span></a>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
