@@ -201,14 +201,16 @@ p {
     margin-left: 50px;
 }
 
-.projetos-faculdade-imagens {
-    display: flex;
-    flex-direction: row;
+.projetos-faculdade-imagens,.projetos-pessoais-imagens {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
     height: 20vh;
     margin: 0 auto;
 }
 
-.projetos-faculdade-imagens div {
+.projetos-faculdade-imagens div, .projetos-pessoais-imagens div {
     align-content: center;
     width: 100%;
     height: 100%;
@@ -221,7 +223,7 @@ p {
     margin-bottom: 40px;
 }
 
-.titulo-faculdade {
+.titulo-faculdade,.titulo-pessoais {
     color: #000000;
     border-left: 4px solid #25D285;
     padding-left: 5px;
@@ -229,46 +231,21 @@ p {
     padding-top: 2px;
 }
 
-.imagem-projeto-faculdade {
+.imagem-projeto-faculdade,.imagem-projeto-pessoais{
     width: 75%;
     height: 20vh;
     margin: 0 auto;
     filter: blur(2px);
-    transition: 2s;
+    transition: 600ms;
 }
 
-.imagem-projeto-faculdade:hover {
+.imagem-projeto-faculdade:hover, .imagem-projeto-pessoais:hover {
     filter: blur(0px);
+    box-shadow: 10px 12px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* ESTILO - PROJETOS PESSOAIS */
 
-.titulo-pessoais {
-    color: #000000;
-    border-left: 4px solid #25D285;
-    padding-left: 5px;
-    margin: 45px auto;
-    padding-top: 2px;
-}
 
-.projetos-pessoais-imagens {
-    display: flex;
-    flex-direction: row;
-    height: 20vh;
-    margin: 0 auto;
-}
-
-.imagem-projeto-pessoais {
-    width: 25%;
-    height: 20vh;
-    margin: 0 auto;
-    filter: blur(2px);
-    transition: 2s;
-}
-
-.imagem-projeto-pessoais:hover {
-    filter: blur(0px);
-}
 
 /* ESTILO MODAL */
 
@@ -535,6 +512,7 @@ iframe {
         width: 90vw;
         font-size: 0.9em;
         text-align: justify;
+
     }
 
     .icone-notebook {
@@ -556,7 +534,7 @@ iframe {
     }
 
     .navbar-linguagens {
-        font-size: 1em;
+        font-size: 1.5em;
         flex-direction: column;
         margin-top: 2em
     }
@@ -567,28 +545,55 @@ iframe {
     }
 
     .texto-linguagens {
-        font-size: 0.8em;
-        margin-bottom: 2px; 
-        margin-top: 2px;  
+        font-size: 0.5em;
+        margin-bottom: 10px; 
+        margin-top: 5px;  
     }
 
     /* PROJETOS */
 
-    .container-projetos{
-        display: flex;
-        flex-wrap: wrap;
-        height: 100vh;
+    .projetos{
+        margin-top: 70px;
+        height: 210vh;
     }
 
-    .projetos{
-        margin-top: 0;
-        
+    .container-projetos{
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr 1fr;
+        flex-wrap: wrap;
+        width: 89%;
+        height: 100%;
+    }
+
+    .projetos-faculdade-imagens ,.projetos-pessoais-imagens {
+
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 100%;
+        row-gap: 80px;
+        justify-items: center;
+        align-items: center;
+        height: 20vh;
+        margin: 0 auto;
+    }
+
+    .projetos-titulos{
+        position: relative;
+        font-size: 0.8em;
     }
 
     .imagem-projeto-faculdade{
-        height: 10vh;
+        height: 30vh;
+        width: 30vw;
+        margin-bottom: 50px;
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .projetos-faculdade-imagens img , .projetos-pessoais-imagens img{
+        width: auto;
+        
     }
 
     /* IMAGEM FIM*/
