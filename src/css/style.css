@@ -98,10 +98,7 @@ p {
 /* ESTILO "LINGUAGENS" */
 
 
-.linguagens {
-    
-    
-}
+.linguagens {}
 
 .navbar-linguagens {
     display: flex;
@@ -110,7 +107,7 @@ p {
     justify-content: space-around;
 }
 
-.titulo-linguagens{
+.titulo-linguagens {
     text-align: center;
     margin-bottom: 55px;
 }
@@ -141,10 +138,33 @@ p {
     flex-direction: column;
 }
 
-.titulo-backend{color: #25D285; border-left: 4px solid #25D285; font-size: bold; padding-left: 5px;}
-.titulo-frontend { color: #25D285; border-left: 4px solid #25D285; font-size: bold; padding-left: 5px;}
-.titulo-frameworks { color: #25D285; border-left: 4px solid #25D285; font-size: bold; padding-left: 5px;}
-.titulo-bancodedados { color: #25D285; border-left: 4px solid #25D285; font-size: bold; padding-left: 5px;}
+.titulo-backend {
+    color: #25D285;
+    border-left: 4px solid #25D285;
+    font-size: bold;
+    padding-left: 5px;
+}
+
+.titulo-frontend {
+    color: #25D285;
+    border-left: 4px solid #25D285;
+    font-size: bold;
+    padding-left: 5px;
+}
+
+.titulo-frameworks {
+    color: #25D285;
+    border-left: 4px solid #25D285;
+    font-size: bold;
+    padding-left: 5px;
+}
+
+.titulo-bancodedados {
+    color: #25D285;
+    border-left: 4px solid #25D285;
+    font-size: bold;
+    padding-left: 5px;
+}
 
 
 
@@ -152,7 +172,7 @@ p {
 /* ESTILO PROJETOS */
 
 
-.projetos{
+.projetos {
     background: linear-gradient(rgb(255, 255, 255) 0%, #00EE76 100%);
     display: flex;
     flex-direction: column;
@@ -160,6 +180,7 @@ p {
     justify-content: center;
     width: 100%;
     height: 160vh;
+    margin-top: 5em;
 }
 
 .container-projetos {
@@ -173,123 +194,130 @@ p {
     height: 405vh;
     display: flex;
     flex-direction: column;
-    position:relative; 
+    position: relative;
 }
 
-.projetos-titulos{
+.projetos-titulos {
     margin-left: 50px;
 }
 
-.projetos-faculdade-imagens{
+.projetos-faculdade-imagens {
     display: flex;
     flex-direction: row;
     height: 20vh;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
-.projetos-faculdade-imagens div{
+.projetos-faculdade-imagens div {
     align-content: center;
     width: 100%;
     height: 100%;
     text-align: center;
-    
-   
+
+
 }
-.titulo-projetos{   
+
+.titulo-projetos {
     margin-bottom: 40px;
 }
-.titulo-faculdade{
-    color: #000000; 
+
+.titulo-faculdade {
+    color: #000000;
     border-left: 4px solid #25D285;
     padding-left: 5px;
     margin: 45px auto;
     padding-top: 2px;
 }
 
-.imagem-projeto-faculdade{
+.imagem-projeto-faculdade {
     width: 75%;
     height: 20vh;
     margin: 0 auto;
     filter: blur(2px);
-    transition: 2s;   
+    transition: 2s;
 }
 
-.imagem-projeto-faculdade:hover{
+.imagem-projeto-faculdade:hover {
     filter: blur(0px);
 }
 
 /* ESTILO - PROJETOS PESSOAIS */
 
-.titulo-pessoais{
-    color: #000000; 
+.titulo-pessoais {
+    color: #000000;
     border-left: 4px solid #25D285;
     padding-left: 5px;
     margin: 45px auto;
     padding-top: 2px;
 }
 
-.projetos-pessoais-imagens{
+.projetos-pessoais-imagens {
     display: flex;
     flex-direction: row;
     height: 20vh;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
-.imagem-projeto-pessoais{
+.imagem-projeto-pessoais {
     width: 25%;
     height: 20vh;
     margin: 0 auto;
     filter: blur(2px);
-    transition: 2s;   
+    transition: 2s;
 }
 
-.imagem-projeto-pessoais:hover{
+.imagem-projeto-pessoais:hover {
     filter: blur(0px);
 }
 
 /* ESTILO MODAL */
 
-.modalOverlay{
- 
+.modalOverlay {
+
     display: none;
     background-color: rgba(0, 0, 0, 0.7);
     width: 1%;
     height: 1%;
     position: fixed;
     top: 50%;
-    left:50%;
+    left: 50%;
 }
-.defModal{
+
+.defModal {
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
     position: fixed;
     top: 0;
-    left:0;
+    left: 0;
 }
-.openModal{
-    display: initial ;
+
+.openModal {
+    display: initial;
     opacity: 1;
     animation: unfold 2s ease-in forwards;
 }
-@keyframes unfold{
-    0% {
-        background-color:rgba(0, 0, 0, 1);
-        transform:scalex(1) ;
-      }
-      50%{
-        background-color:rgba(0, 0, 0, 0.3);
-        transform:scalex(100) scaley(0.1) ;
-      }
-      100%{
 
-        transform:scalex(100) scaley(100) ;
-        background-color:rgba(0, 0, 0, 1);
-      }
+@keyframes unfold {
+    0% {
+        background-color: rgba(0, 0, 0, 1);
+        transform: scalex(1);
+    }
+
+    50% {
+        background-color: rgba(0, 0, 0, 0.3);
+        transform: scalex(100) scaley(0.1);
+    }
+
+    100% {
+
+        transform: scalex(100) scaley(100);
+        background-color: rgba(0, 0, 0, 1);
+    }
 }
 
 
-.modal{
+.modal {
     background-color: rgba(0, 0, 0, 0.8);
     width: 90%;
     height: 90%;
@@ -297,12 +325,13 @@ p {
     position: absolute;
     margin: 5vh 5vw;
 }
-.whiteModal{ 
+
+.whiteModal {
     transition: ease-in 1500ms;
     opacity: 1;
 }
 
-.closeModal{
+.closeModal {
 
     position: absolute;
     right: 5px;
@@ -310,34 +339,39 @@ p {
     cursor: pointer;
 
 }
-.closeModal span{
+
+.closeModal span {
     text-align: center;
-    background-color:#00EE76;
+    background-color: #00EE76;
     padding: 6px;
     border-radius: 100%;
 }
 
-.openModal{
+.openModal {
     display: unset;
     opacity: 1;
     animation: unfold 2s ease-in forwards;
 }
-@keyframes unfold{
-    0% {
-        background-color:rgba(0, 0, 0, 1);
-        transform:scalex(1) ;
-      }
-      50%{
-        background-color:rgba(0, 0, 0, 0.3);
-        transform:scalex(100) scaley(0.1) ;
-      }
-      100%{
 
-        transform:scalex(100) scaley(100) ;
-        background-color:rgba(0, 0, 0, 0.7);
-      }
+@keyframes unfold {
+    0% {
+        background-color: rgba(0, 0, 0, 1);
+        transform: scalex(1);
+    }
+
+    50% {
+        background-color: rgba(0, 0, 0, 0.3);
+        transform: scalex(100) scaley(0.1);
+    }
+
+    100% {
+
+        transform: scalex(100) scaley(100);
+        background-color: rgba(0, 0, 0, 0.7);
+    }
 }
-iframe{
+
+iframe {
     width: 100%;
     height: 90%;
     top: 5%;
@@ -349,7 +383,7 @@ iframe{
 /* ESTILO IMAGEM */
 
 
-.imagem-fim-projetos{
+.imagem-fim-projetos {
     background-image: linear-gradient(#00EE76, white);
     display: flex;
     align-self: center;
@@ -357,7 +391,7 @@ iframe{
     padding-top: 50px;
 }
 
-.imagem-fim{
+.imagem-fim {
     display: flex;
     align-self: center;
     width: 70vw;
@@ -370,15 +404,16 @@ iframe{
 .cursos {
     display: flex;
     flex-direction: column;
-    align-items:center;
-    background: linear-gradient(rgb(255, 255, 255) 0%, #00EE76 100%);
+    align-items: center;
+    background: linear-gradient(#00EE76 0%, rgb(255, 255, 255) 35%, #00EE76 100%);
 }
 
-.meu-curso-titulo{
-    margin-bottom: 40px;
+.meu-curso-titulo {
+    margin-bottom: 1em;
+    margin-top: 4em;
 }
 
-.container-cursos{
+.container-cursos {
     display: flex;
     flex-direction: column;
     border-style: solid;
@@ -389,14 +424,14 @@ iframe{
     box-shadow: 12px 12px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
-.section-cursos{
+.section-cursos {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
-.nome-curso{
+.nome-curso {
     display: flex;
-    align-items:center;
+    align-items: center;
     border-style: solid;
     border-color: #E6ECF8;
     background-color: #E6ECF8;
@@ -405,50 +440,58 @@ iframe{
     padding-bottom: 5px;
 }
 
-.nome-curso:hover{
+.nome-curso:hover {
     color: #00EE76;
     font-weight: bold;
     border-left: #00EE76;
     border-style: solid;
 }
 
-.imagem-curso{
+.imagem-curso {
     width: 5vw;
     margin-right: 15px;
     padding-left: 5px;
 }
 
 
+/* IMAGEM ESTUDO*/
+
+.imagem-estudo {
+    width: 40vw;
+}
+
 /* ESTILO FOOTER */
 
-.footer{
-    background-color: #00EE76;
+.footer {
+    background-image: linear-gradient(#00EE76, white);
     display: flex;
     justify-content: center;
- 
+
 
 }
-.footer-inicio{
-    padding-top: 55px;
-    height: 50vh;
+
+.footer-inicio {
+    padding-top: 105px;
+    height: 35vh;
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
 }
 
-.imagem-redes-footer{
-}
+.imagem-redes-footer {}
 
-.imagem-redes{
+.imagem-redes {
+
     width: 3vw;
 }
 
-.footer-fim{
+.footer-fim {
+    padding-top: 20px;
     display: flex;
     justify-content: center;
-    color: rgb(39, 39, 39); 
+    color: rgb(39, 39, 39);
     font-size: 1em;
-    background-color: #00EE76;
+    background-color: #ffffff;
 }
 
 
@@ -457,61 +500,58 @@ iframe{
 
 @media(max-width: 768px) {
 
-    .conteudo-header{
-        justify-content: space-around;
+    .conteudo-header {
+        justify-content: space-between;
         align-items: baseline;
-        margin-bottom: 1vw; 
-        align-content:center;
-      
+        margin-bottom: 1vw;
+        align-content: center;
+
     }
 
-    .logo-header{
+    .logo-header {
         font-size: 5vw;
         margin-bottom: 1vw;
     }
 
-    .contato-header{
+    .contato-header {
         display: flex;
-        width: 15vw;
-        
-
     }
 
-    .texto-conteudo{
+    .texto-conteudo {
         font-size: 1em;
     }
 
 
     /* BIO */
 
-    .titulo-bio{
+    .titulo-bio {
         font-size: 2em;
     }
 
-    .texto-bio{
+    .texto-bio {
         width: 90vw;
         font-size: 0.9em;
     }
 
-    .icone-notebook{
+    .icone-notebook {
         width: 90vw;
     }
 
 
     /* LINGUAGENS */
 
-    .linguagens{
+    .linguagens {
         display: flex;
 
         flex-direction: column;
         align-items: center;
     }
 
-    .titulo-linguagens{
+    .titulo-linguagens {
         font-size: 2em;
     }
 
-    .navbar-linguagens{
+    .navbar-linguagens {
         font-size: 1em;
         flex-direction: column;
         margin-bottom: 6em;
@@ -519,32 +559,65 @@ iframe{
     }
 
     .container-backend .container-frontend .container-bd .container-framework {
-     
         justify-content: space-around;
-        align-content:space-between;
+        align-content: space-between;
     }
 
-    .texto-linguagens{
+    .texto-linguagens {
         font-size: 0.9em;
+    }
+
+    /* PROJETOS */
+
+    .container-projetos{
+        display: flex;
+        flex-wrap: wrap;
+        height: 100vh;
+    }
+
+    .projetos{
+        margin-top: 0;
+        
+    }
+
+    .imagem-projeto-faculdade{
+        height: 10vh;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     /* IMAGEM FIM*/
 
-    .imagem-fim{
+    .imagem-fim {
         width: 90vw;
-        
+
         margin-top: 2em;
         margin-bottom: 6em;
     }
 
+    /* IMAGEM ESTUDO*/
+
+    .imagem-estudo {
+        width: 90vw;
+    }
+
     /* FOOTER */
 
-    .footer{
+    .footer {}
 
-    }
-
-    .imagem-redes{
+    .imagem-redes {
         width: 7vw;
     }
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px){
+
+}
+
+@media screen and (min-width: 1200px){
 
 }

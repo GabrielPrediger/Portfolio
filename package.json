@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfólio online com projetos criados ou como participante.",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 1",
+    "start": "nodemon --watch app src/server.js",
+    "build": "rollup --config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielPrediger/Portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Gabriel Prediger",
+  "license": "ISC",
+  "homepage": "https://github.com/GabrielPrediger/Portfolio#readme",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6",
+    "path": "^0.12.7",
+    "rollup-plugin-copy": "^3.3.0"
+  }
+}

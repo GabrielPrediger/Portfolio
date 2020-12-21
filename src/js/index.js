@@ -8,10 +8,8 @@ for(let projeto of projetos){
         const videoId = projeto.getAttribute("id");
         modal.querySelector("iframe").src=`https://www.youtube.com/embed/${videoId}`
         openModal();
-    })
+    });
 }
-
-
 
 function openModal(){
     modal.classList.add("openModal")
