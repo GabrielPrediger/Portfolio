@@ -82,6 +82,7 @@ p {
 .texto-bio {
     width: 700px;
     align-self: center;
+    text-align: left;
     line-height: 25px;
 
 }
@@ -102,7 +103,6 @@ p {
 
 .navbar-linguagens {
     display: flex;
-
     flex-direction: row;
     justify-content: space-around;
 }
@@ -472,7 +472,7 @@ iframe {
 
 .footer-inicio {
     padding-top: 105px;
-    height: 35vh;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -481,8 +481,9 @@ iframe {
 .imagem-redes-footer {}
 
 .imagem-redes {
-
-    width: 3vw;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 40px;
 }
 
 .footer-fim {
@@ -519,6 +520,8 @@ iframe {
 
     .texto-conteudo {
         font-size: 1em;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
 
@@ -531,6 +534,7 @@ iframe {
     .texto-bio {
         width: 90vw;
         font-size: 0.9em;
+        text-align: justify;
     }
 
     .icone-notebook {
@@ -554,8 +558,7 @@ iframe {
     .navbar-linguagens {
         font-size: 1em;
         flex-direction: column;
-        margin-bottom: 6em;
-        margin-top: 2em;
+        margin-top: 2em
     }
 
     .container-backend .container-frontend .container-bd .container-framework {
@@ -564,7 +567,9 @@ iframe {
     }
 
     .texto-linguagens {
-        font-size: 0.9em;
+        font-size: 0.8em;
+        margin-bottom: 2px; 
+        margin-top: 2px;  
     }
 
     /* PROJETOS */
