@@ -49,7 +49,6 @@ p {
     font-weight: bold;
 }
 
-
 .imagem-frontend {
     width: 210px;
     align-self: center;
@@ -58,6 +57,7 @@ p {
 
 
 /* ESTILO BIOGRAFIA - QUEM SOU EU? */
+
 
 .bio {
     background-image: linear-gradient(#00EE76, white);
@@ -84,7 +84,6 @@ p {
     align-self: center;
     text-align: left;
     line-height: 25px;
-
 }
 
 .icone-notebook {
@@ -92,14 +91,11 @@ p {
     display: flex;
     align-self: center;
     margin-top: 40px;
-
 }
 
 
 /* ESTILO "LINGUAGENS" */
 
-
-.linguagens {}
 
 .navbar-linguagens {
     display: flex;
@@ -189,7 +185,6 @@ p {
     flex-direction: column;
     align-self: flex-start;
     margin-left: 70px;
-
 }
 
 .titulo-projeto {
@@ -218,7 +213,6 @@ p {
     padding-left: 5px;
     padding-top: 5px;
     margin-top: 50px;
-
 }
 
 
@@ -281,18 +275,19 @@ p {
 
 /* IMAGEM ESTUDO*/
 
+
 .imagem-estudo {
     width: 40vw;
 }
 
+
 /* ESTILO FOOTER */
+
 
 .footer {
     background-image: linear-gradient(#00EE76, white);
     display: flex;
     justify-content: center;
-
-
 }
 
 .footer-inicio {
@@ -302,8 +297,6 @@ p {
     flex-direction: column;
     align-items: center;
 }
-
-.imagem-redes-footer {}
 
 .imagem-redes {
     margin-left: 10px;
@@ -352,6 +345,7 @@ p {
 
     /* BIO */
 
+
     .titulo-bio {
         font-size: 2em;
     }
@@ -360,7 +354,6 @@ p {
         width: 90vw;
         font-size: 0.9em;
         text-align: justify;
-
     }
 
     .icone-notebook {
@@ -370,9 +363,9 @@ p {
 
     /* LINGUAGENS */
 
+
     .linguagens {
         display: flex;
-
         flex-direction: column;
         align-items: center;
     }
@@ -398,8 +391,8 @@ p {
         margin-top: 5px;
     }
 
+    
     /* PROJETOS */
-
 
 
     .projetos {
@@ -425,7 +418,6 @@ p {
         height: 405vh;
         display: flex;
         flex-direction: column;
-
     }
 
     .projetos-titulos {
@@ -468,45 +460,39 @@ p {
         padding-left: 5px;
         padding-top: 5px;
         margin-top: 50px;
-
     }
 
+
     /* CURSOS */
+
 
     .cursos{
         padding-top: 80em;
     }
 
 
-
     /* IMAGEM FIM*/
+
 
     .imagem-fim {
         width: 90vw;
-
         margin-top: 2em;
         margin-bottom: 6em;
     }
 
+
     /* IMAGEM ESTUDO*/
+
 
     .imagem-estudo {
         width: 90vw;
     }
 
+
     /* FOOTER */
 
-    .footer {}
 
     .imagem-redes {
         width: 7vw;
     }
-}
-
-@media screen and (min-width: 768px) {
-
-}
-
-@media (max-width: 992px) {
-
 }
