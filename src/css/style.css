@@ -157,10 +157,11 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     height: 80vh;
     margin-top: 5em;
+    padding-top: 70px;
 }
 
 .container-projetos {
@@ -174,7 +175,7 @@ p {
     height: 405vh;
     display: flex;
     flex-direction: column;
-    position: relative;
+
 }
 
 .projetos-titulos {
@@ -183,30 +184,27 @@ p {
 
 .projetos-faculdade-imagens,
 .projetos-pessoais-imagens {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    height: 20vh;
-    margin: 0 auto;
-}
-
-.projetos-faculdade-imagens div,
-.projetos-pessoais-imagens div {
-    align-content: center;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-left: 70px;
 
 }
 
-.titulo-projetos {
-    margin-bottom: 40px;
+.titulo-projeto {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
-.titulo-faculdade,
-.titulo-pessoais {
+.desc-projeto {
+    line-height: 25px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+
+.titulo-faculdade {
     color: #000000;
     border-left: 4px solid #25D285;
     padding-left: 5px;
@@ -214,149 +212,13 @@ p {
     padding-top: 2px;
 }
 
-.imagem-projeto-faculdade,
-.imagem-projeto-pessoais {
-    width: 75%;
-    height: 20vh;
-    margin: 0 auto;
-    filter: blur(2px);
-    transition: 600ms;
-}
+.titulo-pessoais {
+    color: #000000;
+    border-left: 4px solid #25D285;
+    padding-left: 5px;
+    padding-top: 5px;
+    margin-top: 50px;
 
-.imagem-projeto-faculdade:hover,
-.imagem-projeto-pessoais:hover {
-    filter: blur(0px);
-    box-shadow: 10px 12px 5px rgba(0, 0, 0, 0.3);
-}
-
-
-
-
-/* ESTILO MODAL */
-
-.modalOverlay {
-
-    display: none;
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 1%;
-    height: 1%;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-}
-
-.defModal {
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-.openModal {
-    display: initial;
-    opacity: 1;
-    animation: unfold 2s ease-in forwards;
-}
-
-@keyframes unfold {
-    0% {
-        background-color: rgba(0, 0, 0, 1);
-        transform: scalex(1);
-    }
-
-    50% {
-        background-color: rgba(0, 0, 0, 0.3);
-        transform: scalex(100) scaley(0.1);
-    }
-
-    100% {
-
-        transform: scalex(100) scaley(100);
-        background-color: rgba(0, 0, 0, 1);
-    }
-}
-
-
-.modal {
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 90%;
-    height: 90%;
-    opacity: 0;
-    position: absolute;
-    margin: 5vh 5vw;
-}
-
-.whiteModal {
-    transition: ease-in 1500ms;
-    opacity: 1;
-}
-
-.closeModal {
-
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    cursor: pointer;
-
-}
-
-.closeModal span {
-    text-align: center;
-    background-color: #00EE76;
-    padding: 6px;
-    border-radius: 100%;
-}
-
-.openModal {
-    display: unset;
-    opacity: 1;
-    animation: unfold 2s ease-in forwards;
-}
-
-@keyframes unfold {
-    0% {
-        background-color: rgba(0, 0, 0, 1);
-        transform: scalex(1);
-    }
-
-    50% {
-        background-color: rgba(0, 0, 0, 0.3);
-        transform: scalex(100) scaley(0.1);
-    }
-
-    100% {
-
-        transform: scalex(100) scaley(100);
-        background-color: rgba(0, 0, 0, 0.7);
-    }
-}
-
-iframe {
-    width: 100%;
-    height: 90%;
-    top: 5%;
-    position: absolute;
-
-
-}
-
-/* ESTILO IMAGEM */
-
-
-.imagem-fim-projetos {
-    background-image: linear-gradient(#00EE76, white);
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    padding-top: 50px;
-}
-
-.imagem-fim {
-    display: flex;
-    align-self: center;
-    width: 70vw;
 }
 
 
@@ -365,6 +227,7 @@ iframe {
 
 .cursos {
     display: flex;
+    padding-top: 650px;
     flex-direction: column;
     align-items: center;
     background: linear-gradient(#00EE76 0%, rgb(255, 255, 255) 35%, #00EE76 100%);
@@ -537,51 +400,84 @@ iframe {
 
     /* PROJETOS */
 
+
+
     .projetos {
-        margin-top: 70px;
-        height: 210vh;
+        background: linear-gradient(rgb(255, 255, 255) 0%, #00EE76 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 80vh;
+        margin-top: 5em;
+        padding-top: 70px;
     }
 
     .container-projetos {
-        display: grid;
-        grid-template-rows: 1fr 3fr 1fr 1fr;
-        flex-wrap: wrap;
-        width: 89%;
-        height: 100%;
+        box-shadow: 12px 12px 10px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+        border-style: solid;
+        border-color: #E6ECF8;
+        opacity: 1;
+        background-color: white;
+        width: 80%;
+        height: 405vh;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .projetos-titulos {
+        margin-left: 50px;
     }
 
     .projetos-faculdade-imagens,
     .projetos-pessoais-imagens {
-
         display: flex;
+        width: 50vw;
         flex-direction: column;
-        width: 60%;
-        height: 100%;
-        row-gap: 80px;
-        justify-items: center;
-        align-items: center;
-        height: 20vh;
-        margin: 0 auto;
-    }
-
-    .projetos-titulos {
-        position: relative;
-        font-size: 0.8em;
-    }
-
-    .imagem-projeto-faculdade {
-        height: 30vh;
-        width: 30vw;
-        margin-bottom: 50px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .projetos-faculdade-imagens img,
-    .projetos-pessoais-imagens img {
-        width: auto;
+        align-self: flex-start;
+        margin-left: 70px;
 
     }
+
+    .titulo-projeto {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .desc-projeto {
+        line-height: 25px;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+
+    .titulo-faculdade {
+        color: #000000;
+        border-left: 4px solid #25D285;
+        padding-left: 5px;
+        margin: 45px auto;
+        padding-top: 2px;
+    }
+
+    .titulo-pessoais {
+        color: #000000;
+        border-left: 4px solid #25D285;
+        padding-left: 5px;
+        padding-top: 5px;
+        margin-top: 50px;
+
+    }
+
+    /* CURSOS */
+
+    .cursos{
+        padding-top: 80em;
+    }
+
+
 
     /* IMAGEM FIM*/
 
@@ -607,8 +503,10 @@ iframe {
     }
 }
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
 
-@media screen and (min-width: 992px) {}
+}
 
-@media screen and (min-width: 1200px) {}
+@media (max-width: 992px) {
+
+}

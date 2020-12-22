@@ -6,8 +6,8 @@ var projetos = document.querySelectorAll(".imagem-projeto-faculdade")
 for(let projeto of projetos){
     projeto.addEventListener("click", function(){
         const videoId = projeto.getAttribute("id");
-        modal.querySelector("iframe").src=`https://www.youtube.com/embed/${videoId}`
-        openModal();
+        modal.querySelector("iframe").textContent`Oi`
+
     });
 }
 
