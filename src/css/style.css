@@ -330,6 +330,7 @@ p {
     margin-bottom: 1em;
     margin-top: 1em;
     padding-bottom: 5px;
+    transition: .3s;
 }
 
 .nome-curso:hover {
@@ -375,7 +376,9 @@ p {
     margin-left: 10px;
     margin-right: 10px;
     width: 40px;
+    
 }
+
 
 .footer-fim {
     padding-top: 20px;
