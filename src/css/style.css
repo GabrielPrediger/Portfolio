@@ -96,16 +96,15 @@ p {
 
 /* ESTILO "LINGUAGENS" */
 
+.titulo-linguagens {
+    text-align: center;
+    margin-bottom: 55px;
+}
 
 .navbar-linguagens {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-
-.titulo-linguagens {
-    text-align: center;
-    margin-bottom: 55px;
 }
 
 .texto-linguagens {
